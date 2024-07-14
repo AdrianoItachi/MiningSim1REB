@@ -169,7 +169,7 @@ end)
 
 local RebirthsAmount = game.Players.LocalPlayer.leaderstats.Rebirths
 game:GetService("RunService"):BindToRenderStep("Rebirth", Enum.RenderPriority.Camera.Value, function()
-    while GetCoinsAmount() >= (10000000 * (RebirthsAmount.Value + 1)) do
+    while GetCoinsAmount() >= (1000000 * (RebirthsAmount.Value + 1)) do
         Remote:FireServer("Rebirth",{{}})
         wait()
     end
@@ -187,11 +187,11 @@ end
 local RunService = game:GetService("RunService").Stepped
 local HumanoidRootPart = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 local Character = game.Players.LocalPlayer.Character
-local SellArea = CFrame.new(41.96064, 13.5, -1239.64648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local SellArea = CFrame.new(-38, 13.5, 22558, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 while true do
     if HumanoidRootPart then
-        local minp = HumanoidRootPart.CFrame + Vector3.new(-6,-6,-6)
-        local maxp = HumanoidRootPart.CFrame + Vector3.new(6,6,6)
+        local minp = HumanoidRootPart.CFrame + Vector3.new(-10,-10,-10)
+        local maxp = HumanoidRootPart.CFrame + Vector3.new(10,10,10)
         local region = Region3.new(minp.Position, maxp.Position)
         local parts = workspace:FindPartsInRegion3WithWhiteList(region, {game.Workspace.Blocks}, 100) --  ignore part
         for each, block in pairs(parts) do
