@@ -197,7 +197,7 @@ do
                 if GetInventoryAmount() >= SellTreshold then
                     if Character then
                         if HumanoidRootPart then
-                            local SavedPosition = HumanoidRootPart.Position + Vector3.new(0, 0, 1)  -- Adjusted with additional value
+                            local SavedPosition = HumanoidRootPart.Position + Vector3.new(0, 0, 2)  -- Adjusted with additional value
                             while GetInventoryAmount() >= SellTreshold do
                                 HumanoidRootPart.CFrame = SellArea
                                 Remote:FireServer("SellItems",{{               }})
