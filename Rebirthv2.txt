@@ -187,7 +187,7 @@ end
 local RunService = game:GetService("RunService").Stepped
 local HumanoidRootPart = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 local Character = game.Players.LocalPlayer.Character
-local SellArea = CFrame.new(41.96064, 14, -1239.64648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local SellArea = CFrame.new(41.96064, 13.5, -1239.64648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 while true do
     if HumanoidRootPart then
         local minp = HumanoidRootPart.CFrame + Vector3.new(-10,-10,-10)
