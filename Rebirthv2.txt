@@ -2,7 +2,7 @@ local Depth
 local SellTreshold
 
 if not getgenv().SellTreshold then
-SellTreshold = 26000
+SellTreshold = 22000
 else
 SellTreshold = getgenv().SellTreshold
 end
