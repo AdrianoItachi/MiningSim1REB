@@ -8,7 +8,7 @@ SellTreshold = getgenv().SellTreshold
 end
 
 if not getgenv().Depth then
-Depth = 135
+Depth = 160
 else
 Depth = getgenv().Depth
 end
