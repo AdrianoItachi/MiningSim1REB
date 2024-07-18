@@ -190,8 +190,8 @@ local Character = game.Players.LocalPlayer.Character
 local SellArea = CFrame.new(41.96064, 13.8, -1239.64648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 while true do
     if HumanoidRootPart then
-        local minp = HumanoidRootPart.CFrame + Vector3.new(-10,-10,-10)
-        local maxp = HumanoidRootPart.CFrame + Vector3.new(10,10,10)
+        local minp = HumanoidRootPart.CFrame + Vector3.new(-5,-5,-5)
+        local maxp = HumanoidRootPart.CFrame + Vector3.new(5,5,5)
         local region = Region3.new(minp.Position, maxp.Position)
         local parts = workspace:FindPartsInRegion3WithWhiteList(region, {game.Workspace.Blocks}, 100) --  ignore part
         for each, block in pairs(parts) do
