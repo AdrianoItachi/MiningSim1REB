@@ -59,7 +59,21 @@ local Values = getupvalue(Data,8)
 Remote = Values["RemoteEvent"]
 Data, Values = nil
 end
-
+do
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
+do
+loadstring(game:HttpGet("https://pastebin.com/raw/RexvW9zG", true))()
+end
+wait(1)
+do
+loadstring(game:HttpGet("https://pastebin.com/raw/244JiK8B", true))()
+end
+wait(1)
+do
+loadstring(game:HttpGet("https://pastebin.com/raw/y6yPUABp", true))()
+end
+wait(1)
 do
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
@@ -213,8 +227,9 @@ while true do
                         end
                         HumanoidRootPart.Anchored = true
                         local starttime1 = os.time()
-                        while (HumanoidRootPart.Position - SavedPosition).Magnitude > 1 do
-                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + .8, 26220)
+                        local threshold = 0.01
+                        while (HumanoidRootPart.Position - SavedPosition).Magnitude > threshold do
+                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + .5, 26220)
                             RunService:Wait()
                             if os.time() - starttime1 > 3.5 then
                                 break
