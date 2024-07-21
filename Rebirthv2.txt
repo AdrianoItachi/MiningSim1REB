@@ -229,7 +229,7 @@ while true do
                         local starttime1 = os.time()
                         local threshold = 0.01
                         while (HumanoidRootPart.Position - SavedPosition).Magnitude > threshold do
-                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + .5, 26220)
+                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + 1, 26220)
                             RunService:Wait()
                             if os.time() - starttime1 > 3.5 then
                                 break
