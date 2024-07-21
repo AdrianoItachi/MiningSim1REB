@@ -8,7 +8,7 @@ SellTreshold = getgenv().SellTreshold
 end
 
 if not getgenv().Depth then
-Depth = 240
+Depth = 405
 else
 Depth = getgenv().Depth
 end
@@ -201,11 +201,11 @@ end
 local RunService = game:GetService("RunService").Stepped
 local HumanoidRootPart = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 local Character = game.Players.LocalPlayer.Character
-local SellArea = CFrame.new(-38, 14, 22558, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local SellArea = CFrame.new(41.96064, 15.8550873, -1239.64648, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 while true do
     if HumanoidRootPart then
-        local minp = HumanoidRootPart.CFrame + Vector3.new(-5,-5,-5)
-        local maxp = HumanoidRootPart.CFrame + Vector3.new(5,5,5)
+        local minp = HumanoidRootPart.CFrame + Vector3.new(-8,-8,-8)
+        local maxp = HumanoidRootPart.CFrame + Vector3.new(8,8,8)
         local region = Region3.new(minp.Position, maxp.Position)
         local parts = workspace:FindPartsInRegion3WithWhiteList(region, {game.Workspace.Blocks}, 100) --  ignore part
         for each, block in pairs(parts) do
@@ -225,11 +225,10 @@ while true do
                             Remote:FireServer("SellItems",{{               }})
                             RunService:Wait()
                         end
-                        HumanoidRootPart.Anchored = true
+                        HumanoidRootPart.Anchored = false
                         local starttime1 = os.time()
-                        local threshold = 0.01
-                        while (HumanoidRootPart.Position - SavedPosition).Magnitude > threshold do
-                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + 1, 26220)
+                        while (HumanoidRootPart.Position - SavedPosition).Magnitude > 0.5 do
+                            HumanoidRootPart.CFrame = CFrame.new(18, SavedPosition.Y + 0.5, 26220)
                             RunService:Wait()
                             if os.time() - starttime1 > 3.5 then
                                 break
