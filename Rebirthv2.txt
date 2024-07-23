@@ -153,7 +153,7 @@ local recovering = false
 local DepthAmount = game.Players.LocalPlayer.PlayerGui.ScreenGui.TopInfoFrame.Depth
 DepthAmount.Changed:connect(function()
     local depth = Split(DepthAmount.Text," ")
-    if tonumber(depth[1]) >= 2500 then
+    if tonumber(depth[1]) >= 1200 then
         recovering = true
         local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
