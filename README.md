@@ -18,4 +18,4 @@ TRICK OR TREAT TRAIL
 
 FIRE BANE LEVEL 10 POWER
 
-(order for the skin dont matter on if its the tool skin or backpack skin)```
+(order for the skin dont matter on if its the tool skin or backpack skin)
