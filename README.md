@@ -1,3 +1,5 @@
+!!!IT IS IDEAL TO HAVE 50 OR LESS PING!!!
+
 Use this 30k Setup With 2x Mining Pass
 
 
