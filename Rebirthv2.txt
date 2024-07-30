@@ -86,7 +86,7 @@ while HumanoidRootPart.Position.Z > 26220 do
     HumanoidRootPart.CFrame = CFrame.new(Vector3.new(HumanoidRootPart.Position.X,13.05,HumanoidRootPart.Position.Z-0.5))
     wait()
 end
-HumanoidRootPart.CFrame = CFrame.new(18, 10, 26220)
+HumanoidRootPart.CFrame = CFrame.new(17, 10, 26220)
 end
 
 do
@@ -145,11 +145,11 @@ local recovering = false
 local DepthAmount = game.Players.LocalPlayer.PlayerGui.ScreenGui.TopInfoFrame.Depth
 DepthAmount.Changed:connect(function()
     local depth = Split(DepthAmount.Text," ")
-    if tonumber(depth[1]) >= 1200 then
+    if tonumber(depth[1]) >= 1100 then
         recovering = true
         local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 46
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
         HumanoidRootPart.Anchored = true
         Remote:FireServer("MoveTo", {{"LavaSpawn"}})
         local className = "Part"
@@ -166,7 +166,7 @@ DepthAmount.Changed:connect(function()
             HumanoidRootPart.CFrame = CFrame.new(Vector3.new(HumanoidRootPart.Position.X,13.05,HumanoidRootPart.Position.Z-0.5))
             wait()
         end
-        HumanoidRootPart.CFrame = CFrame.new(18, 10, 26220)
+        HumanoidRootPart.CFrame = CFrame.new(17, 10, 26220)
         wait(5)
         recovering = false
     end
