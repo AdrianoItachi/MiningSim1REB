@@ -47,6 +47,7 @@ local Remote
 Workspace.Collapsed.Changed:connect(function()
 if Workspace.Collapsed.Value == true then
 end
+do
 local Data = getsenv(game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.ClientScript).displayCurrent
 local Values = getupvalue(Data,8)
 Remote = Values["RemoteEvent"]
