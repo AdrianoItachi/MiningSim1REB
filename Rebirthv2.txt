@@ -68,8 +68,8 @@ end
 wait(1)
 do
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 46
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
 HumanoidRootPart.Anchored = true
 Remote:FireServer("MoveTo", {{"LavaSpawn"}})
 local className = "Part"
