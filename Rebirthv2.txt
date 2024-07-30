@@ -48,9 +48,6 @@ local Remote
 
 Workspace.Collapsed.Changed:connect(function()
 if Workspace.Collapsed.Value == true then
-    local ts = game:GetService("TeleportService")
-    local p = game:GetService("Players").LocalPlayer
-    ts:Teleport(game.PlaceId, p)
 end
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
