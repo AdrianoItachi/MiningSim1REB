@@ -109,7 +109,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ProdHallow/Miningsimr
 end
 wait(1)
 do
-loadstring(game:HttpGet("https://pastebin.com/raw/244JiK8B", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProdHallow/MiningSim1Vipstuff/main/vipstuff", true))()
 end
 wait(1)
 do
