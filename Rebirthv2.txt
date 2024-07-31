@@ -1,4 +1,4 @@
-getgenv().Name = "Thx for buying😘😘"
+getgenv().Name = "Use 30K Setup"
 
 task.wait(1)
 
