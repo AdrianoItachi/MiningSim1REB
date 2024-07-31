@@ -105,7 +105,7 @@ do
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end
 do
-loadstring(game:HttpGet("https://pastebin.com/raw/RexvW9zG", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProdHallow/Miningsimrebirthtracker/main/miningsimrebirthtracker", true))()
 end
 wait(1)
 do
