@@ -124,12 +124,6 @@ do
     wait(1)
 
     do
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ProdHallow/MiningSim1Vipstuff/main/vipstuff", true))()
-    end
-
-    wait(1)
-
-    do
         loadstring(game:HttpGet('https://raw.githubusercontent.com/ProdHallow/DeleteAssetMinSim1/main/deleteassetsminingsim'))()
     end
 
