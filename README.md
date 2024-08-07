@@ -31,3 +31,5 @@ TRICK OR TREAT TRAIL
 FIRE BANE LEVEL 10 POWER
 
 (order for the skin dont matter on if its the tool skin or backpack skin)
+
+MUST HAVE VIP AND 2X MINING PASS!
