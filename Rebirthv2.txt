@@ -20,7 +20,7 @@ do
     local SellThreshold
 
     if not getgenv().SellThreshold then
-        SellThreshold = 30000
+        SellThreshold = 90000
     else
         SellThreshold = getgenv().SellThreshold
     end
